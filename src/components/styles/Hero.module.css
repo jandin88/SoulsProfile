@@ -5,54 +5,54 @@
     background: transparent;
     z-index: 1;
     position: relative;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
-  }
-  
-  .subtitle {
+}
+
+.subtitle {
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
     color: #aaa;
     max-width: 600px;
     margin-inline: auto;
-  }
-  
-  .buttons {
+}
+
+.buttons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-  }
-  
-  .buttonPrimary,
-  .buttonSecondary {
+}
+
+.buttonPrimary,
+.buttonSecondary {
     padding: 0.8rem 2rem;
     border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s ease;
-  }
-  
-  .buttonPrimary {
+}
+
+.buttonPrimary {
     background-color: #8a2be2;
     color: white;
-  }
-  
-  .buttonPrimary:hover {
+}
+
+.buttonPrimary:hover {
     background-color: #6e22b8;
-  }
-  
-  .buttonSecondary {
+}
+
+.buttonSecondary {
     background-color: transparent;
     color: #8a2be2;
     border: 2px solid #8a2be2;
-  }
-  
-  .buttonSecondary:hover {
+}
+
+.buttonSecondary:hover {
     background-color: #8a2be2;
     color: white;
-  }
+}

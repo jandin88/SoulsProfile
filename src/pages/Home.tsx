@@ -10,9 +10,7 @@ export default function Home() {
         <Hero />
         <div id="particles-js" ></div>
 
-        <main>
-          <p>Conteúdo da home...</p>
-        </main>
+     
       </>
     );
   }
