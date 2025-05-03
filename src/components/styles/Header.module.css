@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    border-bottom: 1px solid #333;
+}
+
+.title {
+    font-size: 1.7rem;
+}
+.subtitle {
+    margin-right: 100px; /* ou use transform */
+    font-size: 1rem;
+    color: #999;
+}
+
+.caption {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 0.3rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+    margin-right: 5rem;
+}
+
+.socials a {
+    color: #00ced1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #8a2be2;
+}
