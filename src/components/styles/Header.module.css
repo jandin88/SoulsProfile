@@ -34,15 +34,17 @@
     .header {
         flex-direction: column;
         align-items: stretch; /* para usar alinhamentos internos */
+        padding: 0.5rem 0.6rem;
+
     }
 
     .subtitle {
-        margin-left: 0;
+        margin-left: 0rem;
     }
     .avatar {
         align-self: flex-end; /* posiciona no canto direito do header */
         position: absolute;
-
+        margin-right: 0rem;
       }
 
 
