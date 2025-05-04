@@ -1,11 +1,23 @@
 .header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 2rem;
     background-color: #0f0f0f;
     color: #f0f0f0;
-    padding: 1rem 2rem;
-    flex-wrap: wrap; /* mantém visual estável em telas pequenas */
+    border-bottom: 1px solid #333;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #999;
+    margin-top: 0.2rem;
 }
 
 .avatar {
@@ -13,39 +25,23 @@
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #8a2be2;
-}
+    border: 3px solid #8a2be2;
+  }
 
-.title {
-    font-size: 1.7rem;
-    font-weight: bold;
-    text-align: center;
-    flex: 1;
-    margin-left:5.5rem;
-}
-
-.subtitle {
-    font-size: 1rem;
-    color: #aaa;
-    white-space: nowrap;
-}
-
+  
 /* RESPONSIVO */
 @media (max-width: 600px) {
     .header {
-      flex-direction: column;
-      gap: 0.5rem;
-      align-items: center;
+        flex-direction: column;
+        align-items: stretch; /* para usar alinhamentos internos */
     }
-  
-    .title {
-      flex: none;
-      margin-left: 0rem;
-    }
-  
+
     .subtitle {
-      text-align: center;
-      white-space: normal;
+        margin-left: 0;
     }
-  }
-  
+    .avatar {
+        align-self: flex-end; /* posiciona no canto direito do header */
+      }
+
+
+}
