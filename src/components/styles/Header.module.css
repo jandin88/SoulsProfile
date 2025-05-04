@@ -41,6 +41,8 @@
     }
     .avatar {
         align-self: flex-end; /* posiciona no canto direito do header */
+        position: absolute;
+
       }
 
 
