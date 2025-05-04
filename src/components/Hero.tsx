@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles/Hero.module.css";
-import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
     return (
