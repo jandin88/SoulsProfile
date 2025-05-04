@@ -1,98 +1,51 @@
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.7rem 1rem;
+    justify-content: space-between;
     background-color: #0f0f0f;
     color: #f0f0f0;
-    border-bottom: 1px solid #333;
-    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    flex-wrap: wrap; /* mantém visual estável em telas pequenas */
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #8a2be2;
 }
 
 .title {
     font-size: 1.7rem;
     font-weight: bold;
+    text-align: center;
+    flex: 1;
+    margin-left:5.5rem;
 }
 
 .subtitle {
     font-size: 1rem;
-    color: #999;
-    margin-top: 0.2rem;
-}
-
-.caption {
-    font-size: 0.85rem;
     color: #aaa;
-    margin-top: 0.3rem;
-}
-
-.right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.socials {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 1rem;
-    margin-left: 1rem;
-}
-
-.socials a {
-    color: #00ced1;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.socials a:hover {
-    color: #8a2be2;
-}
-
-.menuButton {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    color: #fff;
-    cursor: pointer;
-  
+    white-space: nowrap;
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .header {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
     }
-
+  
+    .title {
+      flex: none;
+      margin-left: 0rem;
+    }
+  
     .subtitle {
-        margin-left: 0;
+      text-align: center;
+      white-space: normal;
     }
-
-    .right {
-        width: 100%;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .socials {
-        display: none;
-        flex-direction: column;
-        gap: 0.75rem;
-        margin-top: 0.5rem;
-    }
-
-    .socials.open {
-        display: flex;
-    }
-
-    .menuButton {
-        display: block;
-        position: absolute;
-        top: 1.2rem;
-        right: 1.5rem;
-        z-index: 10;
-      }
-}
+  }
+  
