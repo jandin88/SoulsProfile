@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
             <div className={styles.buttons}>
                 <div>
                     <Link to="/professional" className={styles.buttonPrimary}>
-                        Soul Job
+                        Soul Work
                     </Link>
                     <p className={styles.caption}>Carreira & Projetos</p>
                 </div>

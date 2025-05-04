@@ -2,19 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 1rem;
+    padding: 0.7rem 1rem;
     background-color: #0f0f0f;
     color: #f0f0f0;
     border-bottom: 1px solid #333;
+    flex-wrap: wrap;
 }
 
 .title {
     font-size: 1.7rem;
+    font-weight: bold;
 }
+
 .subtitle {
-    margin-right: 100px; /* ou use transform */
     font-size: 1rem;
     color: #999;
+    margin-top: 0.2rem;
 }
 
 .caption {
@@ -23,11 +26,17 @@
     margin-top: 0.3rem;
 }
 
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .socials {
     display: flex;
     gap: 1.5rem;
     font-size: 1rem;
-    margin-right: 5rem;
+    margin-left: 1rem;
 }
 
 .socials a {
@@ -38,4 +47,52 @@
 
 .socials a:hover {
     color: #8a2be2;
+}
+
+.menuButton {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+  
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subtitle {
+        margin-left: 0;
+    }
+
+    .right {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .socials {
+        display: none;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+    }
+
+    .socials.open {
+        display: flex;
+    }
+
+    .menuButton {
+        display: block;
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+        z-index: 10;
+      }
 }
