@@ -1,0 +1,8 @@
+[build]
+  publish = "dist"      # ajuste se seu build sai em outra pasta
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
