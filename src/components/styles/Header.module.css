@@ -66,4 +66,10 @@
 }
 
 
-
+/* Header.module.css */
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
