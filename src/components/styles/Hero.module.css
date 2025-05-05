@@ -1,17 +1,15 @@
-/* Essa section não bloqueia o fundo */
 .heroWrapper {
     position: absolute;
     top: 45%;
     left: 46%;
     transform: translate(-50%, -50%);
     width: 100%;
-    pointer-events: none; /* permite interação com partículas */
+    pointer-events: none;
     display: flex;
     justify-content: center;
-    
+    font-family: 'Tagesschrift', serif;
 }
 
-/* Só os elementos visíveis/clicáveis recebem eventos */
 .hero {
     pointer-events: auto;
     text-align: center;
@@ -21,7 +19,6 @@
     z-index: 1;
 }
 
-/* Conteúdo normal */
 .title {
     font-size: 2.5rem;
     margin-bottom: 1rem;

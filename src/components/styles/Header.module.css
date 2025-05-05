@@ -13,6 +13,7 @@
 .title {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 10rem;
 }
 
 .subtitle {
@@ -38,9 +39,11 @@
         padding: 0.5rem 0.8rem;
 
     }
-
+    .title{
+        margin-left: 1rem;
+    }
     .subtitle {
-        margin-left: 0rem;
+        margin-top: 0rem;
     }
     .avatar {
         align-self: flex-end; /* posiciona no canto direito do header */
@@ -50,3 +53,17 @@
 
 
 }
+@media (max-width: 980px) {
+    .title{
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 826px) {
+    .subtitle {
+        margin-top: 1rem;
+    }
+}
+
+
+
