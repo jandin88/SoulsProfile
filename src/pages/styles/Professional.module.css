@@ -1,96 +1,161 @@
-/* Seções com padding e cores de fundo alternadas */
+.container {
+    position: relative;
+    overflow: hidden;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    padding: 0;
+    margin: 0;
+}
+
+.particles {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 4rem 2rem;
-    text-align: center;
-    background: #0f0f0f;
-}
-.skills {
-    padding: 4rem 2rem;
-    background: #111;
-}
-.projects {
-    padding: 4rem 2rem;
-    background: #0f0f0f;
+    gap: 2rem;
 }
 
-/* Títulos de seção */
-.sectionTitle {
-    font-size: 2rem;
+.heroContent {
+    max-width: 50%;
+}
+
+.heroContent h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #40c0ac, #3182ce);
+    -webkit-background-clip: text;
+    color: transparent;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #8a2be2;
+}
+
+.heroContent p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.ctaButton {
     display: inline-block;
+    background: #40c0ac;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #0a0a0a;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s;
 }
 
-/* Texto de acompanhamento */
-.sectionText {
-    color: #ccc;
-    max-width: 600px;
-    margin: 0.5rem auto 0;
-    line-height: 1.5;
+.ctaButton:hover {
+    transform: scale(1.05);
 }
 
-/* Grid de tags */
-.tagsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+.heroImage img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3182ce;
+}
+
+.section {
+    padding: 2rem 15%;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #40c0ac;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.item span {
+    color: #a0a0a0;
+}
+
+.period {
+    font-size: 0.875rem;
+    color: #707070;
+    margin-bottom: 0.75rem;
+}
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    justify-items: center;
-    margin-top: 2rem;
-}
-.tag {
-    background: #222;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    transition: background 0.3s;
-}
-.tag:hover {
-    background: #8a2be2;
 }
 
-/* Grid de cards de projeto */
 .projectsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
 }
-.card {
-    background: #222;
-    color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: transform 0.3s, box-shadow 0.3s;
+/* Social Links */
+.social {
+    text-align: center;
+    padding: 2rem 0;
 }
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+.social h2 {
+    font-size: 1.75rem;
+    color: #40c0ac;
+    margin-bottom: 1rem;
+}
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.socialLinks a {
+    color: #e0e0e0;
+    transition: color 0.2s;
+}
+.socialLinks a:hover {
+    color: #40c0ac;
+}
+@media (max-width: 700px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .heroContent {
+        max-width: 100%;
+    }
+
+    .heroImage,
+    .heroImageImg {
+        display: none;
+    }
 }
 
-/* Header fixo no topo */
-.header.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Responsividade básica */
-@media (max-width: 768px) {
-    .sectionTitle {
-        font-size: 1.75rem;
-    }
-    .sectionText,
-    .tag {
-        font-size: 0.9rem;
-    }
+.skillIcon {
+    font-size: 2.5rem;
+    color: #e0e0e0;
+    transition: color 0.2s, transform 0.2s;
 }
-@media (max-width: 480px) {
-    .sectionTitle {
-        font-size: 1.5rem;
-    }
-    .sectionText {
-        font-size: 0.85rem;
-    }
+
+.skillIcon:hover {
+    color: #40c0ac;
+    transform: scale(1.1);
 }
