@@ -159,3 +159,26 @@
     color: #40c0ac;
     transform: scale(1.1);
 }
+
+/* Professional.module.css */
+
+.navButtons {
+  display: flex;
+  justify-content: space-between; /* Home à esquerda, Hobbies à direita */
+  padding: 1rem 3rem;
+}
+
+
+.navButton {
+    background: #3182ce;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.navButton:hover {
+    background: #2b6cb0;
+}
+

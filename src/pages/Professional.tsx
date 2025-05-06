@@ -1,5 +1,6 @@
 // src/pages/Professional.tsx
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import { WaveSeparator } from "../components/WaveSeparator";
 import { GlassCard } from "../components/GlassCard";
@@ -43,8 +44,7 @@ const experiences = [
         company: "Kalendae",
         role: "Especialista & Desenvolvedor Zendesk",
         period: "Mar 2024 – Jan 2025",
-        description:
-            `Consultor especializado em Zendesk, com experiência em 
+        description: `Consultor especializado em Zendesk, com experiência em 
             compreender e otimizar processos de atendimento ao cliente. 
             Proficiente na implementação personalizada no.Zendesk, dedicado a aprimorar a eficiência operacional.`,
     },
@@ -52,8 +52,7 @@ const experiences = [
         company: "Tecna Sistemas",
         role: "Analista/Consultor Zendesk",
         period: "Set 2022 – Jan 2024",
-        description:
-                `Experiência em análise de processos, integrações e
+        description: `Experiência em análise de processos, integrações e
                 desenvolvimento, com amplo conhecimento no uso de APIs
                 Zendesk, criação de dashboards, definição de fluxos de bots e
                 desenvolvimento utilizando as APIs do Sunco..`,
@@ -73,8 +72,6 @@ const education = [
     },
 ];
 
-
-
 const projects: Project[] = [
     {
         title: "MYGL",
@@ -86,26 +83,32 @@ const projects: Project[] = [
     },
     {
         title: "SoulsProfile ",
-        description:
-            "Portigolio pessoal",
+        description: "Portigolio pessoal",
         techs: ["React", "Vite"],
         repoUrl: "https://github.com/jandin88/SoulsProfile",
-         liveUrl: 'https://myperfil.shop'
+        liveUrl: "https://myperfil.shop",
     },
     {
         title: "ChatBotJava",
-        description:
-            "Criação de um chatBot para um ecomerce ",
+        description: "Criação de um chatBot para um ecomerce ",
         techs: ["Java", "Spring Boot", "Openai"],
         repoUrl: "https://github.com/jandin88/ChatBotJava",
         // liveUrl: 'https://jandin88.github.io/MYGL/'
     },
-
 ];
 
 const Professional: React.FC = () => (
     <div className={styles.container}>
         {/* Header comum */}
+
+        <div className={styles.navButtons}>
+            <Link to="/" className={styles.navButton}>
+                ← Home
+            </Link>
+            <Link to="/personal" className={styles.navButton}>
+                Hobbies →
+            </Link>
+        </div>
         <Header />
 
         {/* Hero Section */}
@@ -113,7 +116,8 @@ const Professional: React.FC = () => (
             <div className={styles.heroContent}>
                 <h1>Especialista Zendesk & Desenvolvedor FullStack</h1>
                 <p>
-                    Especialista em todos os modulos Zendesk e Desenvolvedor FullStack
+                    Especialista em todos os modulos Zendesk e Desenvolvedor
+                    FullStack
                 </p>
                 <a href="#projects" className={styles.ctaButton}>
                     Ver Projetos
@@ -203,7 +207,7 @@ const Professional: React.FC = () => (
                 ))}
             </div>
         </section>
-        <Footer/>
+        <Footer />
     </div>
 );
 
