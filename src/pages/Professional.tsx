@@ -93,7 +93,7 @@ const projects: Project[] = [
         description: "Criação de um chatBot para um ecomerce ",
         techs: ["Java", "Spring Boot", "Openai"],
         repoUrl: "https://github.com/jandin88/ChatBotJava",
-        // liveUrl: 'https://jandin88.github.io/MYGL/'
+         liveUrl: 'https://chatbotjava.onrender.com'
     },
 ];
 
