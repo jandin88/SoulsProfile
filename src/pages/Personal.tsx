@@ -49,18 +49,7 @@ export default function Personal() {
         </a>
       </section>
 
-      <section className={styles.games}>
-        <h3>Meus Jogos Favoritos</h3>
-        <div className={styles.cards}>
-          {['The Witcher 3', 'Elden Ring', 'Stardew Valley', 'Hades'].map(game => (
-            <div key={game} className={styles.card}>
-              <FaGamepad className={styles.icon} />
-              <span>{game}</span>
-            </div>
-          ))}
-        </div>
-        
-      </section>
+      
         <section className="mt-10">
         <FavoritesAnime />
       </section>
