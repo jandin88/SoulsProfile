@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fa';
 import { SiMyanimelist } from 'react-icons/si';
 import styles from './styles/Personal.module.css';
+import FavoritesAnime from '../components/favoritesAPi';
 
 export default function Personal() {
   return (
@@ -58,6 +59,10 @@ export default function Personal() {
             </div>
           ))}
         </div>
+        
+      </section>
+        <section className="mt-10">
+        <FavoritesAnime />
       </section>
 
       <section className={styles.science}>
@@ -78,6 +83,7 @@ export default function Personal() {
           ))}
         </div>
       </section>
+
 
       <section className={styles.reading}>
         <h3>Leituras Recentes</h3>
