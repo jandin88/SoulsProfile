@@ -4,8 +4,8 @@ import {
   FaSteam,
   FaInstagram,
   // FaGamepad,
-  // FaAtom,
-  // FaBook
+  FaAtom,
+  FaBook
 } from 'react-icons/fa';
 import { SiMyanimelist } from 'react-icons/si';
 import styles from './styles/Personal.module.css';
