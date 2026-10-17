@@ -3,9 +3,9 @@ import ParticlesBackground from '../util/particles/Particles';
 import {
   FaSteam,
   FaInstagram,
-  FaGamepad,
-  FaAtom,
-  FaBook
+  // FaGamepad,
+  // FaAtom,
+  // FaBook
 } from 'react-icons/fa';
 import { SiMyanimelist } from 'react-icons/si';
 import styles from './styles/Personal.module.css';
