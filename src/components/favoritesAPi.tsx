@@ -28,7 +28,7 @@ const FavoritesShowcase: React.FC = () => {
   useEffect(() => {
     const fetchFavorites = async () => {
       try {
-        const res = await fetch('https://api.jikan.moe/v4/users/Nisen_ni/favorites');
+        const res = await fetch('https://api.jikan.moe/v4/users/janjandin/favorites');
         const data = await res.json();
         setAnimeFavorites(data?.data?.anime?.slice().reverse() || []);
       } catch (err) {
